@@ -15,11 +15,7 @@
   <header class="site-header">
     <nav class="nav container">
       <a href="#" class="nav__logo" aria-label="Excursion Home">
-        <svg class="nav__logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M18 3L33 30H3L18 3Z" fill="var(--accent)" stroke="var(--accent)" stroke-linejoin="round"/>
-          <path d="M10 30L18 16L26 30" fill="var(--bg-deep)" stroke="none"/>
-        </svg>
-        <span class="nav__logo-text">excursion</span>
+        <img src="resources/excursion.png" alt="Excursion" class="nav__logo-img" />
       </a>
       <ul class="nav__links">
         <li><a href="#features">Features</a></li>
@@ -38,7 +34,9 @@
     <!-- ===================== HERO ===================== -->
     <section class="hero" id="hero">
       <div class="hero__bg-video-wrap">
-        <!-- Fallback atmospheric bg if no video -->
+        <video class="hero__video" autoplay muted loop playsinline poster="resources/camp.jpg">
+          <source src="resources/excursion.mp4" type="video/mp4" />
+        </video>
         <div class="hero__bg-overlay"></div>
         <div class="hero__terrain"></div>
       </div>
@@ -310,20 +308,7 @@
         </div>
         <div class="download__mockup">
           <div class="phone-mockup">
-            <div class="phone-mockup__screen">
-              <div class="phone-screen-ui">
-                <div class="phone-screen-ui__map"></div>
-                <div class="phone-screen-ui__card">
-                  <div class="phone-screen-ui__route"></div>
-                  <div class="phone-screen-ui__stats">
-                    <span>12.4 km</span>
-                    <span>↑ 843m</span>
-                    <span>4h 20m</span>
-                  </div>
-                </div>
-                <div class="phone-screen-ui__marker"></div>
-              </div>
-            </div>
+            <img src="resources/phone.png" alt="Excursion app screenshot" class="phone-mockup__img" />
           </div>
         </div>
       </div>
@@ -336,11 +321,7 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <a href="#" class="nav__logo footer__logo" aria-label="Excursion Home">
-          <svg class="nav__logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M18 3L33 30H3L18 3Z" fill="var(--accent)" stroke="var(--accent)" stroke-linejoin="round"/>
-            <path d="M10 30L18 16L26 30" fill="var(--bg-deep)" stroke="none"/>
-          </svg>
-          <span class="nav__logo-text">excursion</span>
+          <img src="resources/excursion.png" alt="Excursion" class="nav__logo-img" />
         </a>
         <p class="footer__tagline">Built for those who wander with purpose.</p>
       </div>
