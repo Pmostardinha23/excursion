@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Excursion — Find Your Next Adventure</title>
+  <link rel="stylesheet" href="resources/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo" aria-label="Excursion Home">
+        <svg class="nav__logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 3L33 30H3L18 3Z" fill="var(--accent)" stroke="var(--accent)" stroke-linejoin="round"/>
+          <path d="M10 30L18 16L26 30" fill="var(--bg-deep)" stroke="none"/>
+        </svg>
+        <span class="nav__logo-text">excursion</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#download" class="nav__cta-link">Download</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg-video-wrap">
+        <!-- Fallback atmospheric bg if no video -->
+        <div class="hero__bg-overlay"></div>
+        <div class="hero__terrain"></div>
+      </div>
+      <div class="container hero__content">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          New — GPS Trail Tracking v2.4
+        </div>
+        <h1 class="hero__headline">
+          Your next<br />
+          <em>great adventure</em><br />
+          starts here.
+        </h1>
+        <p class="hero__sub">
+          Excursion helps outdoor enthusiasts discover, plan, and log
+          unforgettable hikes, climbs, and camping trips — all from your pocket.
+        </p>
+        <div class="hero__actions">
+          <a href="#download" class="btn btn--primary">Download the App</a>
+          <a href="#how-it-works" class="btn btn--ghost">See how it works</a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <strong>200K+</strong>
+            <span>Trails mapped</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <strong>4.9 ★</strong>
+            <span>App Store rating</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <strong>80K+</strong>
+            <span>Active hikers</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll-hint">
+        <span>Scroll to explore</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURES ===================== -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">What you get</span>
+          <h2 class="section-title">Everything you need on the trail</h2>
+          <p class="section-desc">
+            Excursion is built by hikers, for hikers. We stripped out the noise
+            and doubled down on what actually matters when you're out there.
+          </p>
+        </div>
+        <div class="features__grid">
+
+          <article class="feature-card feature-card--highlight">
+            <div class="feature-card__icon-wrap">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="10" stroke="var(--accent)" stroke-width="2.5"/>
+                <line x1="24" y1="4" x2="24" y2="12" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="24" y1="36" x2="24" y2="44" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="4" y1="24" x2="12" y2="24" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="36" y1="24" x2="44" y2="24" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="24" cy="24" r="3.5" fill="var(--accent)"/>
+              </svg>
+            </div>
+            <h3>GPS Trail Navigation</h3>
+            <p>Offline-capable topographic maps with real-time positioning. Never lose the trail, even without signal.</p>
+            <span class="feature-card__tag">Offline</span>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon-wrap">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 8C18 8 10 14 10 24C10 32 16 40 24 40C32 40 38 32 38 24" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"/>
+                <polyline points="30,8 38,8 38,16" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="38" y1="8" x2="26" y2="20" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Route Logging</h3>
+            <p>Auto-record every adventure with elevation gain, pace, distance, and photos geotagged to the trail.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon-wrap">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 38L20 22L28 30L36 16L44 24" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="20" cy="22" r="3" fill="var(--accent)" opacity="0.5"/>
+                <circle cx="36" cy="16" r="3" fill="var(--accent)" opacity="0.5"/>
+              </svg>
+            </div>
+            <h3>Weather Forecasts</h3>
+            <p>Hyperlocal mountain weather pulled directly to your trail view. Check conditions up to 7 days ahead.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon-wrap">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 6L28.9 16.9L41 18.7L32.5 27L34.7 39L24 33.3L13.3 39L15.5 27L7 18.7L19.1 16.9L24 6Z" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Community Reviews</h3>
+            <p>Real trail conditions from hikers who were there last weekend — not just last year's guide book.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon-wrap">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="8" width="28" height="32" rx="4" stroke="var(--accent)" stroke-width="2.5"/>
+                <line x1="16" y1="18" x2="32" y2="18" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+                <line x1="16" y1="24" x2="28" y2="24" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+                <line x1="16" y1="30" x2="24" y2="30" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Trip Planning</h3>
+            <p>Build detailed itineraries with gear checklists, waypoints, and emergency contact sharing.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon-wrap">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="20" r="6" stroke="var(--accent)" stroke-width="2.5"/>
+                <circle cx="32" cy="20" r="6" stroke="var(--accent)" stroke-width="2.5"/>
+                <path d="M6 40C6 33.4 10.5 28 16 28" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M32 28C37.5 28 42 33.4 42 40" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M22 32C24 30.5 26 30.5 28 32" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Group Adventures</h3>
+            <p>See your group's location in real-time on shared maps. Stay together even when the trail splits.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HOW IT WORKS ===================== -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <div class="section-header section-header--light">
+          <span class="section-eyebrow section-eyebrow--dark">Simple process</span>
+          <h2 class="section-title">From your couch to the summit in minutes</h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step__number">01</div>
+            <div class="step__connector"></div>
+            <div class="step__content">
+              <h3>Discover a trail</h3>
+              <p>Browse 200,000+ curated trails filtered by difficulty, distance, location, and season. Bookmark the ones that call to you.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__number">02</div>
+            <div class="step__connector"></div>
+            <div class="step__content">
+              <h3>Plan your trip</h3>
+              <p>Build your itinerary, download offline maps, check the forecast, and share your plan with your emergency contact — all in the app.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__number">03</div>
+            <div class="step__connector"></div>
+            <div class="step__content">
+              <h3>Hit the trail</h3>
+              <p>Navigate with live GPS, log waypoints, and capture memories. Excursion runs fully offline so dead zones won't slow you down.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__number">04</div>
+            <div class="step__connector step__connector--last"></div>
+            <div class="step__content">
+              <h3>Share & remember</h3>
+              <p>Auto-generate a beautiful trip summary with stats, photos, and your traced route. Share it with friends or keep it in your journal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Real adventurers</span>
+          <h2 class="section-title">Trusted by the hiking community</h2>
+        </div>
+        <div class="testimonials__grid">
+
+          <blockquote class="testimonial testimonial--featured">
+            <div class="testimonial__stars">★★★★★</div>
+            <p class="testimonial__quote">
+              "I've tried every hiking app out there. Excursion is the only one that feels like it was
+              built by someone who actually hikes. The offline maps alone are worth it."
+            </p>
+            <footer class="testimonial__author">
+              <div class="testimonial__avatar testimonial__avatar--1"></div>
+              <div>
+                <strong>Sarah K.</strong>
+                <span>Appalachian Trail thru-hiker</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <div class="testimonial__stars">★★★★★</div>
+            <p class="testimonial__quote">
+              "Group tracking saved our trip in Patagonia. Cell service was zero, but we could
+              all see each other on the shared map. Absolute game-changer."
+            </p>
+            <footer class="testimonial__author">
+              <div class="testimonial__avatar testimonial__avatar--2"></div>
+              <div>
+                <strong>Marcus T.</strong>
+                <span>Alpine guide, Colorado</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <div class="testimonial__stars">★★★★★</div>
+            <p class="testimonial__quote">
+              "The trip journal feature is incredible. Every adventure is automatically
+              documented — I've basically stopped carrying a notebook."
+            </p>
+            <footer class="testimonial__author">
+              <div class="testimonial__avatar testimonial__avatar--3"></div>
+              <div>
+                <strong>Yuki M.</strong>
+                <span>Weekend explorer, PNW</span>
+              </div>
+            </footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DOWNLOAD CTA ===================== -->
+    <section class="download" id="download">
+      <div class="container download__inner">
+        <div class="download__text">
+          <span class="section-eyebrow section-eyebrow--dark">Get started</span>
+          <h2 class="download__title">Your adventure<br />awaits. Download free.</h2>
+          <p class="download__sub">
+            Available on iOS and Android. No subscription required to get started —
+            core navigation is always free.
+          </p>
+          <div class="download__badges">
+            <a href="#" class="store-badge" aria-label="Download on the App Store">
+              <svg viewBox="0 0 135 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="store-badge__svg">
+                <rect width="135" height="40" rx="8" fill="black"/>
+                <text x="38" y="14" fill="white" font-family="sans-serif" font-size="8" font-weight="400" letter-spacing="0.5">Download on the</text>
+                <text x="38" y="28" fill="white" font-family="sans-serif" font-size="14" font-weight="600">App Store</text>
+                <text x="12" y="28" fill="white" font-size="24" font-family="sans-serif"></text>
+              </svg>
+            </a>
+            <a href="#" class="store-badge" aria-label="Get it on Google Play">
+              <svg viewBox="0 0 135 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="store-badge__svg">
+                <rect width="135" height="40" rx="8" fill="black"/>
+                <text x="38" y="14" fill="white" font-family="sans-serif" font-size="8" font-weight="400" letter-spacing="0.5">GET IT ON</text>
+                <text x="38" y="28" fill="white" font-family="sans-serif" font-size="14" font-weight="600">Google Play</text>
+                <text x="12" y="28" fill="white" font-size="22" font-family="sans-serif">▶</text>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="download__mockup">
+          <div class="phone-mockup">
+            <div class="phone-mockup__screen">
+              <div class="phone-screen-ui">
+                <div class="phone-screen-ui__map"></div>
+                <div class="phone-screen-ui__card">
+                  <div class="phone-screen-ui__route"></div>
+                  <div class="phone-screen-ui__stats">
+                    <span>12.4 km</span>
+                    <span>↑ 843m</span>
+                    <span>4h 20m</span>
+                  </div>
+                </div>
+                <div class="phone-screen-ui__marker"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo footer__logo" aria-label="Excursion Home">
+          <svg class="nav__logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 3L33 30H3L18 3Z" fill="var(--accent)" stroke="var(--accent)" stroke-linejoin="round"/>
+            <path d="M10 30L18 16L26 30" fill="var(--bg-deep)" stroke="none"/>
+          </svg>
+          <span class="nav__logo-text">excursion</span>
+        </a>
+        <p class="footer__tagline">Built for those who wander with purpose.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <div class="footer__nav-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Trail Maps</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-col">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Trail Reports</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <small>© 2026 Excursion Inc. All rights reserved.</small>
+      <div class="footer__legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.nav__hamburger');
+    const navLinks = document.querySelector('.nav__links');
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', !expanded);
+      navLinks.classList.toggle('nav__links--open');
+      hamburger.classList.toggle('nav__hamburger--open');
+    });
+
+    // Scroll-based header background
+    const header = document.querySelector('.site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('site-header--scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // Intersection observer for reveal animations
+    const observerOptions = { threshold: 0.12, rootMargin: '0px 0px -40px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.feature-card, .step, .testimonial, .section-header').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+
+    // Stagger children within grids
+    document.querySelectorAll('.features__grid .feature-card').forEach((el, i) => {
+      el.style.transitionDelay = `${i * 80}ms`;
+    });
+    document.querySelectorAll('.testimonials__grid .testimonial').forEach((el, i) => {
+      el.style.transitionDelay = `${i * 100}ms`;
+    });
+  </script>
+
+</body>
+</html>
